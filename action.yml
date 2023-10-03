@@ -148,7 +148,7 @@ runs:
           RENV_LOCK=${{ inputs.renv-lock-file }}
           OTHER_PKG=${{ inputs.packages }}
           REPOS=${{ inputs.repos }}
-        platforms: linux/amd64
+        platforms: linux/amd64,linux/arm64
 
     - name: Move cache ♻️
       run: |
